@@ -2,17 +2,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "SlimeWare", HidePremium = true, SaveConfig = false, ConfigFolder = "SlimeWare"})
 
-local Tab = Window:MakeTab({
-	Name = "Farming",
+local FarmTab = Window:MakeTab({
+	Name = "AutoFarming",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-	Name = "AutoFarm"
-})
-
-Tab:AddButton({
+FarmTab:AddButton({
 	Name = "Chest AutoFarm",
 	Callback = function()
         getgenv().Setting = {
@@ -28,3 +24,4 @@ Tab:AddButton({
 })
 
 OrionLib:Init()
+
