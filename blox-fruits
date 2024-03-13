@@ -12,7 +12,7 @@ local Section = Tab:AddSection({
 	Name = "AutoFarm"
 })
 
-Farming:AddButton({
+Tab:AddButton({
 	Name = "Chest AutoFarm",
 	Callback = function()
         getgenv().Setting = {
@@ -25,13 +25,6 @@ Farming:AddButton({
         }
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Slimexiuem/MenuSlime/main/Farmchestv2"))()
   	end    
-})
-
-OrionLib:MakeNotification({
-	Name = "Yay",
-	Content = "Yay,you successfully executed that script!",
-	Image = "rbxassetid://4483345998",
-	Time = 5
 })
 
 OrionLib:Init()
